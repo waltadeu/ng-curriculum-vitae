@@ -1,0 +1,43 @@
+﻿body {
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.content {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+header,
+main {
+    display: flex;
+    padding: 1rem;
+}
+
+    header section,
+    main section {
+        -ms-flex: 1;
+        flex: 1;
+    }
+    header section:first-child,
+    main section:first-child {
+        max-width: 45%;
+    }
+
+header h1 {
+    font-size: 4rem;
+    margin: 0;
+}
+main h3 {
+    margin: 0;
+}
+main hr {
+    margin: 20px 0;
+}
+header .fa,
+main .fa {
+    vertical-align: middle;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
