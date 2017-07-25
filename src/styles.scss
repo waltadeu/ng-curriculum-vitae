@@ -4,6 +4,12 @@
   position: relative;
   margin-left: auto;
   margin-right: auto;
+  hr {
+    display: block;
+    border-color: #000;
+    border-width: 2px;
+    margin: 10px 0;
+}
   ul {
     list-style: none;
     padding: 0;
@@ -12,6 +18,7 @@
   dl {
     margin: 0;
     dt {
+      font-size: 16px;
       padding-top: 10px;
       padding-bottom: 5px;
     }
@@ -23,6 +30,9 @@
         padding-top: 0;
         padding-bottom: 0;
       }
+      dd {
+        padding-left: 10px;
+      }
     }
   }
   h1 {
@@ -32,6 +42,7 @@
     font-weight: 500;
     line-height: 1.1em;
     color: inherit;
+    font-size: 48px;
   }
   dt,
   strong {
@@ -39,5 +50,10 @@
   }
   .material-icons {
     vertical-align: middle;
+  }
+  .category-list > dt {
+    font-size: 20px;
+    border-bottom: 2px solid #444;
+    margin: 0 0 10px 0;
   }
 }
