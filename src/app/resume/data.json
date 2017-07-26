@@ -9,9 +9,10 @@
     "city": "São Paulo",
     "state": "SP",
     "url": "http://lnkd.in/3k8m6C",
-    "birthday": "21/02/1987"
+    "date-of-birth": "21/02/1987",
+    "summary": ""
   },
-  "education": {
+  "educations": {
     "locale-name": "Formação",
     "list": ["Cursando o 7º semestre de Ciência da Computação pelo Centro Universitário Nove de Julho."]
   },
@@ -79,14 +80,14 @@
       }
     ]
   },
-  "Languages": {
+  "languages": {
     "locale-name": "Idiomas",
     "list": [{
-      "language-name": "Português",
-      "skill-level": "Nativo"
+      "language": "Português",
+      "proficiency": "Nativo"
     }, {
-      "language-name": "Inglês",
-      "skill-level": "Avançado"
+      "language": "Inglês",
+      "proficiency": "Avançado"
     }]
   },
   "professional-experience": {
