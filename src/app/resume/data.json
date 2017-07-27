@@ -21,7 +21,7 @@
     "list": ["Microsoft - Programming in HTML5 with Javascript and CSS3 Specialist."]
   },
   "skills-summary": {
-    "locale-name": "Competências e especialidades",
+    "locael-name": "Competências e especialidades",
     "categories": [{
         "name": "Linguagens",
         "items": [
