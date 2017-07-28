@@ -1,36 +1,36 @@
 <div fxLayout fxLayoutGap="20px">
   <div fxFlex>
-    <h1>{{resume.basics.name}}</h1>
-    <h2 *ngIf="resume.basics.label">{{resume.basics.label}}</h2>
+    <h1>{{resume?.basics.name}}</h1>
+    <h2 *ngIf="resume?.basics.label">{{resume?.basics.label}}</h2>
   </div>
   <div fxFlex>
     <ul>
-      <li *ngIf="resume.basics.phone"><i class="material-icons">phone</i> {{resume.basics.phone}}</li>
-      <li *ngIf="resume.basics.email"><i class="material-icons">mail_outline</i> {{resume.basics.email}}</li>
-      <li *ngIf="resume.basics.location"><i class="material-icons">home</i> {{resume.basics.location.city}} - {{resume.basics.location.region}}</li>
-      <li *ngIf="resume.basics.url"><i class="material-icons">link</i> {{resume.basics.url}}</li>
-      <li *ngIf="resume.basics.birthdate"><i class="material-icons">cake</i> {{resume.basics.birthdate}}</li>
-      <li *ngFor="let profile of resume.basics.profiles">
-        <span class="icon">{{profile.network | lowercase}}</span> {{profile.url ?profile.url:profile.username}}
+      <li *ngIf="resume?.basics.phone"><md-icon>phone</md-icon> {{resume?.basics.phone}}</li>
+      <li *ngIf="resume?.basics.email"><md-icon>mail_outline</md-icon> {{resume?.basics.email}}</li>
+      <li *ngIf="resume?.basics.location"><md-icon>home</md-icon> {{resume?.basics.location.city}} - {{resume?.basics.location.region}}</li>
+      <li *ngIf="resume?.basics.url"><md-icon>link</md-icon> {{resume?.basics.url}}</li>
+      <li *ngIf="resume?.basics.birthdate"><md-icon>cake</md-icon> {{resume?.basics.birthdate}}</li>
+      <li *ngFor="let profile of resume?.basics.profiles">
+        <md-icon>{{profile.network | lowercase}}</md-icon> {{profile.url ?profile.url:profile.username}}
       </li>
     </ul>
   </div>
 </div>
 <hr>
-<div *ngIf="resume.basics.summary">
+<div *ngIf="resume?.basics.summary">
   <h3>Sobre</h3>
-  <p>{{resume.basics.summary}}</p>
+  <p>{{resume?.basics.summary}}</p>
   <hr>
 </div>
 <div fxLayout fxLayoutGap="20px">
   <div fxFlex>
     <dl class="category-list">
-      <dt *ngIf="resume.education">
-        <i class="material-icons">school</i> Formação
+      <dt *ngIf="resume?.education">
+        <md-icon>school</md-icon> Formação
       </dt>
-      <dd *ngIf="resume.education">
+      <dd *ngIf="resume?.education">
         <ul>
-          <li *ngFor="let education of resume.education">
+          <li *ngFor="let education of resume?.education">
             <ul>
               <li *ngIf="education.institution"><strong>institution: </strong>{{education.institution}}</li>
               <li *ngIf="education.area"><strong>area: </strong>{{education.area}}</li>
@@ -49,12 +49,12 @@
           </li>
         </ul>
       </dd>
-      <dt *ngIf="resume.awards">
-        <i class="material-icons">star</i> Certiﬁcação
+      <dt *ngIf="resume?.awards">
+        <md-icon>star</md-icon> Certiﬁcação
       </dt>
-      <dd *ngIf="resume.awards">
+      <dd *ngIf="resume?.awards">
         <ul>
-          <li *ngFor="let award of resume.awards">
+          <li *ngFor="let award of resume?.awards">
             <ul>
               <li *ngIf="award.title"><strong>title: </strong>{{award.title}}</li>
               <li *ngIf="award.date"><strong>date: </strong>{{award.date}}</li>
@@ -64,21 +64,25 @@
           </li>
         </ul>
       </dd>
-      <dt *ngIf="resume.skills">
-        <i class="material-icons">computer</i> Competências e especialidades
+      <dt *ngIf="resume?.skills">
+        <md-icon>computer</md-icon> Competências e especialidades
       </dt>
-      <dd *ngIf="resume.skills">
-        <div *ngFor="let skill of resume.skills">
-          {{skill.name}} - {{skill.level}}
-          <ul>
-            <li *ngFor="let keyword of skill.keywords">
-              {{keyword}}
-            </li>
-          </ul>
-        </div>
+      <dd *ngIf="resume?.skills">
+        <dl>
+          <ng-template ngFor let-skill [ngForOf]="resume?.skills">
+            <dt>{{skill.name}}</dt>
+            <dd>
+              <ul>
+                <li *ngFor="let keyword of skill.keywords">
+                  {{keyword}}
+                </li>
+              </ul>
+            </dd>
+          </ng-template>
+        </dl>
       </dd>
       <dt>
-        <i class="material-icons">translate</i> Idiomas
+        <md-icon>translate</md-icon> Idiomas
       </dt>
       <dd>
         <ul>
@@ -88,11 +92,11 @@
           <li>Avançado</li>
         </ul>
       </dd>
-      <dt *ngIf="resume.volunteer">
-        <i class="material-icons">history</i> volunteer
+      <dt *ngIf="resume?.volunteer">
+        <md-icon>history</md-icon> volunteer
       </dt>
-      <dd *ngIf="resume.volunteer">
-        <dl class="volunteer-list" *ngFor="let volunteer of resume.volunteer">
+      <dd *ngIf="resume?.volunteer">
+        <dl class="volunteer-list" *ngFor="let volunteer of resume?.volunteer">
           <dt>
             {{volunteer.organization}}
           </dt>
@@ -118,10 +122,10 @@
   <div fxFlex>
     <dl class="category-list">
       <dt>
-        <i class="material-icons">history</i> Experiência Proﬁssional
+        <md-icon>history</md-icon> Experiência Proﬁssional
       </dt>
       <dd>
-        <dl class="work-list" *ngFor="let work of resume.work">
+        <dl class="work-list" *ngFor="let work of resume?.work">
           <dt>
             {{work.name}}
           </dt>
