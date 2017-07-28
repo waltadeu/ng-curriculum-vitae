@@ -1,14 +1,15 @@
 <div fxLayout fxLayoutGap="20px">
   <div fxFlex>
     <h1>{{resume.basics.name}}</h1>
+    <h2 *ngIf="resume.basics.label">{{resume.basics.label}}</h2>
   </div>
   <div fxFlex>
     <ul>
-      <li><i class="material-icons">phone</i> {{resume.basics.phone}}</li>
-      <li><i class="material-icons">mail_outline</i> {{resume.basics.email}}</li>
-      <li><i class="material-icons">home</i> {{resume.basics.location.city}} - {{resume.basics.location.region}}</li>
-      <li><i class="material-icons">link</i> {{resume.basics.url}}</li>
-      <li><i class="material-icons">cake</i> [21/02/1987]</li>
+      <li *ngIf="resume.basics.phone"><i class="material-icons">phone</i> {{resume.basics.phone}}</li>
+      <li *ngIf="resume.basics.email"><i class="material-icons">mail_outline</i> {{resume.basics.email}}</li>
+      <li *ngIf="resume.basics.location"><i class="material-icons">home</i> {{resume.basics.location.city}} - {{resume.basics.location.region}}</li>
+      <li *ngIf="resume.basics.url"><i class="material-icons">link</i> {{resume.basics.url}}</li>
+      <li *ngIf="resume.basics.birthdate"><i class="material-icons">cake</i> {{resume.basics.birthdate}}</li>
       <li *ngFor="let profile of resume.basics.profiles">
         <span class="icon">{{profile.network | lowercase}}</span> {{profile.url ?profile.url:profile.username}}
       </li>
@@ -17,101 +18,64 @@
 </div>
 <hr>
 <div *ngIf="resume.basics.summary">
-  <h2>Sobre</h2>
+  <h3>Sobre</h3>
   <p>{{resume.basics.summary}}</p>
   <hr>
 </div>
 <div fxLayout fxLayoutGap="20px">
   <div fxFlex>
     <dl class="category-list">
-      <dt>
+      <dt *ngIf="resume.education">
         <i class="material-icons">school</i> Formação
       </dt>
-      <dd>
+      <dd *ngIf="resume.education">
         <ul>
-          <li>Cursando o 7º semestre de Ciência da Computação pelo Centro Universitário Nove de Julho.</li>
+          <li *ngFor="let education of resume.education">
+            <ul>
+              <li *ngIf="education.institution"><strong>institution: </strong>{{education.institution}}</li>
+              <li *ngIf="education.area"><strong>area: </strong>{{education.area}}</li>
+              <li *ngIf="education.studyType"><strong>studyType: </strong>{{education.studyType}}</li>
+              <li *ngIf="education.startDate"><strong>Período: </strong>{{education.startDate}} {{education.endDate}}</li>
+              <li *ngIf="education.gpa"><strong>GPA: </strong>{{education.gpa}}</li>
+              <li *ngIf="education.courses">
+                <strong>courses: </strong>
+                <ul *ngIf="education.courses">
+                  <li *ngFor="let course of education.courses">
+                    {{course}}
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
         </ul>
       </dd>
-      <dt>
+      <dt *ngIf="resume.awards">
         <i class="material-icons">star</i> Certiﬁcação
       </dt>
-      <dd>
+      <dd *ngIf="resume.awards">
         <ul>
-          <li>Microsoft - Programming in HTML5 with Javascript and CSS3 Specialist.</li>
+          <li *ngFor="let award of resume.awards">
+            <ul>
+              <li *ngIf="award.title"><strong>title: </strong>{{award.title}}</li>
+              <li *ngIf="award.date"><strong>date: </strong>{{award.date}}</li>
+              <li *ngIf="award.awarder"><strong>award: </strong>{{award.awarder}}</li>
+              <li *ngIf="award.summary"><strong>summary: </strong>{{award.summary}}</li>
+            </ul>
+          </li>
         </ul>
       </dd>
-      <dt>
+      <dt *ngIf="resume.skills">
         <i class="material-icons">computer</i> Competências e especialidades
       </dt>
-      <dd>
-        <dl>
-          <dt>
-            Linguagens
-          </dt>
-          <dd>
-            <ul>
-              <li>HTML5</li>
-              <li>CSS3</li>
-              <li>Javascript(ES6)</li>
-            </ul>
-          </dd>
-          <dt>
-            Frameworks e bibliotecas
-          </dt>
-          <dd>
-            <ul>
-              <li>Angular (1.x e 2+)</li>
-              <li>Bootstrap (2 e 3)</li>
-              <li>RequireJS</li>
-              <li>jQuery</li>
-              <li>Knockout</li>
-              <li>Templating Engines (Mustache e Handlebars)</li>
-            </ul>
-          </dd>
-          <dt>
-            Trabalho com
-          </dt>
-          <dd>
-            <ul>
-              <li>TypeScript</li>
-              <li>SASS e LESS</li>
-              <li>REST</li>
-              <li>Node.js</li>
-              <li>GIT, TFS e SVN</li>
-              <li>NPM, Webpack, Bower, Gulp, Grunt</li>
-              <li>C#.NET (Web Forms e MVC)</li>
-              <li>Adobe Photoshop</li>
-              <li>Visual Studio</li>
-              <li>Visual Studio Code</li>
-            </ul>
-          </dd>
-          <dt>
-            Técnicas
-          </dt>
-          <dd>
-            <ul>
-              <li>Single Page Applications</li>
-              <li>Responsive &#x26; Fluid Layout (FlexBox)</li>
-              <li>Parallax</li>
-              <li>Cross-browser Compatibility</li>
-              <li>Web Standards</li>
-              <li>Acessibilidade, SEO, WAI-ARIA e Microformats</li>
-            </ul>
-          </dd>
-          <dt>
-            Estou aprendendo
-          </dt>
-          <dd>
-            <ul>
-              <li>React</li>
-              <li>Webpack</li>
-              <li>CSS Grid layout</li>
-              <li>Jasmine</li>
-              <li>Karma</li>
-              <li>Protractor</li>
-            </ul>
-          </dd>
-        </dl>
+      <dd *ngIf="resume.skills">
+        <div *ngFor="let skill of resume.skills">
+          {{skill.name}} - {{skill.level}}
+          <ul>
+            <li *ngFor="let keyword of skill.keywords">
+              {{keyword}}
+            </li>
+          </ul>
+        </div>
       </dd>
       <dt>
         <i class="material-icons">translate</i> Idiomas

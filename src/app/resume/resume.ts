@@ -2,6 +2,8 @@ export interface Resume {
   "basics"?: {
     "name"?: string;
     // e.g. Richard Hendriks
+    "birthdate"?: string;
+    // resume.json uses the ISO 8601 date standard e.g. 2014-06-29
     "label"?: string;
     // e.g. Web Developer
     "image"?: string;

@@ -5,6 +5,7 @@ export class InMemResumeService implements InMemoryDbService {
     let resume = {
       "basics": {
         "name": "Richard Hendriks",
+        "birthdate": "2014-06-29",
         "label": "Programmer",
         "image": "",
         "email": "richard.hendriks@mail.com",
