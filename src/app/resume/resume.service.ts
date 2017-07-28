@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Headers, Http } from '@angular/http';
-import { ResumeSchema } from "./resume";
+import { Resume } from "./resume";
 
 import 'rxjs/add/operator/toPromise';
 
@@ -10,10 +10,10 @@ export class ResumeService {
 
   constructor(private http: Http) { }
 
-  getResume(): Promise<ResumeSchema> {
+  getResume(): Promise<Resume> {
     return this.http.get(this.resumeUrl)
       .toPromise()
-      .then(response => response.json().data as ResumeSchema)
+      .then(response => response.json().data as Resume)
       .catch(this.handleError);
   }
 

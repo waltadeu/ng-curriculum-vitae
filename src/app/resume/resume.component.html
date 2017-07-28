@@ -111,18 +111,44 @@
               <li>Protractor</li>
             </ul>
           </dd>
+        </dl>
+      </dd>
+      <dt>
+        <i class="material-icons">translate</i> Idiomas
+      </dt>
+      <dd>
+        <ul>
+          <li>Português</li>
+          <li>Nativo</li>
+          <li>Inglês</li>
+          <li>Avançado</li>
+        </ul>
+      </dd>
+      <dt *ngIf="resume.volunteer">
+        <i class="material-icons">history</i> volunteer
+      </dt>
+      <dd *ngIf="resume.volunteer">
+        <dl class="volunteer-list" *ngFor="let volunteer of resume.volunteer">
           <dt>
-            <i class="material-icons">translate</i> Idiomas
+            {{volunteer.organization}}
           </dt>
           <dd>
             <ul>
-              <li>Português</li>
-              <li>Nativo</li>
-              <li>Inglês</li>
-              <li>Avançado</li>
+              <li><strong>Cargo:</strong> {{volunteer.position}}</li>
+              <li><strong>Período:</strong> De {{volunteer.startDate}} até {{volunteer.endDate?volunteer.endDate:'atual'}}.</li>
+              <li *ngIf="volunteer.url"><strong>URL:</strong> {{volunteer.url}}.</li>
+              <li>
+                <strong>Descrição do cargo:</strong> {{volunteer.summary}}
+                <ul *ngIf="volunteer.highlights">
+                  <li *ngFor="let highlight of volunteer.highlights">
+                    {{highlight}}
+                  </li>
+                </ul>
+              </li>
             </ul>
           </dd>
         </dl>
+      </dd>
     </dl>
   </div>
   <div fxFlex>
@@ -137,11 +163,12 @@
           </dt>
           <dd>
             <ul>
+              <li><strong>Descrição da empresa:</strong> {{work.description}}</li>
               <li><strong>Cargo:</strong> {{work.position}}</li>
               <li><strong>Período:</strong> De {{work.startDate}} até {{work.endDate?work.endDate:'atual'}}.</li>
               <li *ngIf="work.url"><strong>URL:</strong> {{work.url}}.</li>
               <li>
-                <strong>Descrição do cargo:</strong> {{work.description}}
+                <strong>Descrição do cargo:</strong> {{work.summary}}
                 <ul *ngIf="work.highlights">
                   <li *ngFor="let highlight of work.highlights">
                     {{highlight}}

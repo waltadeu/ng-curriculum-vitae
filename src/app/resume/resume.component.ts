@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ResumeService } from "./resume.service";
-import { ResumeSchema } from "./resume";
+import { Resume } from "./resume";
 
 @Component({
   templateUrl: './resume.component.html',
@@ -8,7 +8,7 @@ import { ResumeSchema } from "./resume";
 })
 export class ResumeComponent implements OnInit {
 
-  resume: ResumeSchema;
+  resume: Resume;
 
   constructor(private resumeService: ResumeService) { }
 
