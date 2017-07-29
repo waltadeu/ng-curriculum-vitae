@@ -5,11 +5,16 @@
   </div>
   <div fxFlex>
     <ul>
-      <li *ngIf="resume?.basics.phone"><md-icon>phone</md-icon> {{resume?.basics.phone}}</li>
-      <li *ngIf="resume?.basics.email"><md-icon>mail_outline</md-icon> {{resume?.basics.email}}</li>
-      <li *ngIf="resume?.basics.location"><md-icon>home</md-icon> {{resume?.basics.location.city}} - {{resume?.basics.location.region}}</li>
-      <li *ngIf="resume?.basics.url"><md-icon>link</md-icon> {{resume?.basics.url}}</li>
-      <li *ngIf="resume?.basics.birthdate"><md-icon>cake</md-icon> {{resume?.basics.birthdate}}</li>
+      <li *ngIf="resume?.basics.phone">
+        <md-icon>phone</md-icon> {{resume?.basics.phone}}</li>
+      <li *ngIf="resume?.basics.email">
+        <md-icon>mail_outline</md-icon> {{resume?.basics.email}}</li>
+      <li *ngIf="resume?.basics.location">
+        <md-icon>home</md-icon> {{resume?.basics.location.city}} - {{resume?.basics.location.region}}</li>
+      <li *ngIf="resume?.basics.url">
+        <md-icon>link</md-icon> {{resume?.basics.url}}</li>
+      <li *ngIf="resume?.basics.birthdate">
+        <md-icon>cake</md-icon> {{resume?.basics.birthdate}}</li>
       <li *ngFor="let profile of resume?.basics.profiles">
         <md-icon>{{profile.network | lowercase}}</md-icon> {{profile.url ?profile.url:profile.username}}
       </li>
@@ -81,16 +86,35 @@
           </ng-template>
         </dl>
       </dd>
+      <dt *ngIf="resume?.interests">
+        <md-icon>computer</md-icon> interests
+      </dt>
+      <dd *ngIf="resume?.interests">
+        <dl>
+          <ng-template ngFor let-interest [ngForOf]="resume?.interests">
+            <dt>{{interest.name}}</dt>
+            <dd>
+              <ul>
+                <li *ngFor="let keyword of interest.keywords">
+                  {{keyword}}
+                </li>
+              </ul>
+            </dd>
+          </ng-template>
+        </dl>
+      </dd>
       <dt>
         <md-icon>translate</md-icon> Idiomas
       </dt>
       <dd>
-        <ul>
-          <li>Português</li>
-          <li>Nativo</li>
-          <li>Inglês</li>
-          <li>Avançado</li>
-        </ul>
+        <dl *ngFor="let language of resume?.languages">
+          <dt>
+            {{language.language}}
+          </dt>
+          <dd>
+            {{language.fluency}}
+          </dd>
+        </dl>
       </dd>
       <dt *ngIf="resume?.volunteer">
         <md-icon>history</md-icon> volunteer
@@ -110,6 +134,72 @@
                 <ul *ngIf="volunteer.highlights">
                   <li *ngFor="let highlight of volunteer.highlights">
                     {{highlight}}
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </dd>
+        </dl>
+      </dd>
+      <dt *ngIf="resume?.publications">
+        <md-icon>history</md-icon> publications
+      </dt>
+      <dd *ngIf="resume?.publications">
+        <dl *ngFor="let publication of resume?.publications">
+          <dt>
+            {{publication.name}}
+          </dt>
+          <dd>
+            <ul>
+              <li><strong>publisher: </strong>{{publication.publisher}}</li>
+              <li><strong>releaseDate: </strong>{{publication.releaseDate}}</li>
+              <li><strong>url: </strong>{{publication.url}}</li>
+              <li><strong>summary: </strong>{{publication.summary}}</li>
+            </ul>
+          </dd>
+        </dl>
+      </dd>
+      <dt *ngIf="resume?.references">
+        <md-icon>history</md-icon> references
+      </dt>
+      <dd *ngIf="resume?.references">
+        <dl *ngFor="let reference of resume?.references">
+          <dt>
+            {{reference.name}}
+          </dt>
+          <dd>
+            {{reference.reference}}
+          </dd>
+        </dl>
+      </dd>
+      <dt *ngIf="resume?.projects">
+        <md-icon>history</md-icon> Projects
+      </dt>
+      <dd *ngIf="resume?.projects">
+        <dl class="work-list" *ngFor="let project of resume?.projects">
+          <dt>
+            {{project.name}}
+          </dt>
+          <dd>
+            <ul>
+              <li><strong>description:</strong> {{project.description}}</li>
+              <li><strong>URL:</strong> {{project.url}}</li>
+              <li><strong>Período:</strong> De {{project.startDate}} até {{project.endDate?project.endDate:'atual'}}.</li>
+              <li *ngIf="project.url"><strong>URL:</strong> {{project.url}}.</li>
+              <li><strong>entity:</strong> {{project.entity}}</li>
+              <li *ngIf="project.highlights">
+                <strong>highlights:</strong>
+                <ul>
+                  <li *ngFor="let highlight of project.highlights">
+                    {{highlight}}
+                  </li>
+                </ul>
+              </li>
+              <li *ngIf="project.roles">
+                <strong>roles:</strong>
+                <ul>
+                  <li *ngFor="let role of project.roles">
+                    {{role}}
                   </li>
                 </ul>
               </li>
