@@ -26,7 +26,7 @@
 </header>
 <main>
   <div *ngIf="resume?.basics.summary">
-    <h3>Sobre</h3>
+    <h2>Sobre</h2>
     <p>{{resume?.basics.summary}}</p>
     <hr>
   </div>
@@ -103,7 +103,7 @@
           </dl>
         </dd>
         <dt *ngIf="resume?.publications">
-          <md-icon>history</md-icon> Publicações
+          <md-icon>local_library</md-icon> Publicações
         </dt>
         <dd *ngIf="resume?.publications">
           <dl *ngFor="let publication of resume?.publications">
@@ -121,7 +121,7 @@
           </dl>
         </dd>
         <dt *ngIf="resume?.references">
-          <md-icon>history</md-icon> Recomendações
+          <md-icon>speaker_notes</md-icon> Recomendações
         </dt>
         <dd *ngIf="resume?.references">
           <dl *ngFor="let reference of resume?.references">
@@ -134,7 +134,7 @@
           </dl>
         </dd>
         <dt *ngIf="resume?.projects">
-          <md-icon>history</md-icon> Projeyos
+          <md-icon>developer_board</md-icon> Projetos
         </dt>
         <dd *ngIf="resume?.projects">
           <dl class="work-list" *ngFor="let project of resume?.projects">
