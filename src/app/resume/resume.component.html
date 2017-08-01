@@ -41,12 +41,12 @@
             <li *ngFor="let education of resume?.education">
               <ul>
                 <li *ngIf="education.institution"><strong>Instituição: </strong>{{education.institution}}</li>
-                <li *ngIf="education.area"><strong>Área: </strong>{{education.area}}</li>
-                <li *ngIf="education.studyType"><strong>studyType: </strong>{{education.studyType}}</li>
+                <li *ngIf="education.area"><strong>Formação: </strong>{{education.area}}</li>
+                <li *ngIf="education.studyType"><strong>Área de estudo: </strong>{{education.studyType}}</li>
                 <li *ngIf="education.startDate"><strong>Período: </strong>{{education.startDate}} {{education.endDate}}</li>
-                <li *ngIf="education.gpa"><strong>GPA: </strong>{{education.gpa}}</li>
+                <li *ngIf="education.gpa"><strong>Média: </strong>{{education.gpa}}</li>
                 <li *ngIf="education.courses">
-                  <strong>courses: </strong>
+                  <strong>Cursos: </strong>
                   <ul *ngIf="education.courses">
                     <li *ngFor="let course of education.courses">
                       {{course}}
@@ -64,10 +64,10 @@
           <ul>
             <li *ngFor="let award of resume?.awards">
               <ul>
-                <li *ngIf="award.title"><strong>title: </strong>{{award.title}}</li>
-                <li *ngIf="award.date"><strong>date: </strong>{{award.date}}</li>
-                <li *ngIf="award.awarder"><strong>award: </strong>{{award.awarder}}</li>
-                <li *ngIf="award.summary"><strong>summary: </strong>{{award.summary}}</li>
+                <li *ngIf="award.title"><strong>Título: </strong>{{award.title}}</li>
+                <li *ngIf="award.date"><strong>Data: </strong>{{award.date}}</li>
+                <li *ngIf="award.awarder"><strong>Instituição: </strong>{{award.awarder}}</li>
+                <li *ngIf="award.summary"><strong>Resumo: </strong>{{award.summary}}</li>
               </ul>
             </li>
           </ul>
@@ -121,7 +121,7 @@
           </dl>
         </dd>
         <dt *ngIf="resume?.references">
-          <md-icon>history</md-icon> references
+          <md-icon>history</md-icon> Recomendações
         </dt>
         <dd *ngIf="resume?.references">
           <dl *ngFor="let reference of resume?.references">
@@ -134,7 +134,7 @@
           </dl>
         </dd>
         <dt *ngIf="resume?.projects">
-          <md-icon>history</md-icon> Projects
+          <md-icon>history</md-icon> Projeyos
         </dt>
         <dd *ngIf="resume?.projects">
           <dl class="work-list" *ngFor="let project of resume?.projects">
@@ -143,21 +143,20 @@
             </dt>
             <dd>
               <ul>
-                <li><strong>description:</strong> {{project.description}}</li>
+                <li><strong>Entidade:</strong> {{project.entity}}</li>
                 <li><strong>URL:</strong> {{project.url}}</li>
                 <li><strong>Período:</strong> De {{project.startDate}} até {{project.endDate?project.endDate:'atual'}}.</li>
                 <li *ngIf="project.url"><strong>URL:</strong> {{project.url}}.</li>
-                <li><strong>entity:</strong> {{project.entity}}</li>
-                <li *ngIf="project.highlights">
-                  <strong>highlights:</strong>
-                  <ul>
+                <li>
+                  <strong>Descrição:</strong> {{project.description}}
+                  <ul *ngIf="project.highlights">
                     <li *ngFor="let highlight of project.highlights">
                       {{highlight}}
                     </li>
                   </ul>
                 </li>
                 <li *ngIf="project.roles">
-                  <strong>roles:</strong>
+                  <strong>Funções:</strong>
                   <ul>
                     <li *ngFor="let role of project.roles">
                       {{role}}
@@ -230,7 +229,7 @@
 <footer>
   <dl>
     <dt *ngIf="resume?.interests">
-      <md-icon>computer</md-icon> interests
+      <md-icon>computer</md-icon> Interesses
     </dt>
     <dd *ngIf="resume?.interests">
       <dl>
