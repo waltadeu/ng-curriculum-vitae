@@ -1,8 +1,9 @@
 import { InMemoryDbService } from 'angular-in-memory-web-api';
+import { Resume } from './resume/resume';
 
 export class InMemResumeService implements InMemoryDbService {
   createDb() {
-    const resume = {
+    const resume: Resume = {
       'basics': {
         'name': 'Richard Hendriks',
         'birthdate': '2014-06-29',
@@ -10,7 +11,7 @@ export class InMemResumeService implements InMemoryDbService {
         'image': '',
         'email': 'richard.hendriks@mail.com',
         'phone': '(912) 555-4321',
-        'url': 'http://richardhendricks.example.com',
+        'url': 'http://richardhendricks.com',
         'summary': 'Richard hails from Tulsa. He has earned degrees from the University of Oklahoma and Stanford. (Go Sooners and Cardinal!) Before starting Pied Piper, he worked for Hooli as a part time software developer. While his work focuses on applied information theory, mostly optimizing lossless compression schema of both the length-limited and adaptive variants, his non-work interests range widely, everything from quantum computing to chaos theory. He could tell you about it, but THAT would NOT be a “length-limited” conversation!',
         'location': {
           'address': '2712 Broadway St',
@@ -28,7 +29,7 @@ export class InMemResumeService implements InMemoryDbService {
           {
             'network': 'SoundCloud',
             'username': 'dandymusicnl',
-            'url': 'https://soundcloud.example.com/dandymusicnl'
+            'url': 'https://soundcloud.com/dandymusicnl'
           }
         ]
       },
@@ -158,6 +159,10 @@ export class InMemResumeService implements InMemoryDbService {
         {
           'language': 'English',
           'fluency': 'Native speaker'
+        },
+        {
+          'language': 'Portuguese ',
+          'fluency': 'Basic'
         }
       ],
       'interests': [
@@ -166,6 +171,14 @@ export class InMemResumeService implements InMemoryDbService {
           'keywords': [
             'Ferrets',
             'Unicorns'
+          ]
+        },
+        {
+          'name': 'Sports',
+          'keywords': [
+            'Cycling',
+            'Basketball',
+            'Golf'
           ]
         }
       ],
@@ -203,6 +216,6 @@ export class InMemResumeService implements InMemoryDbService {
         'lastModified': '2017-12-24T15:53:00'
       }
     };
-    return {resume};
+    return { resume };
   }
 }
