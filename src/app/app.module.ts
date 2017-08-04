@@ -24,10 +24,10 @@ import { ResumeService } from "./resume/resume.service";
     BrowserModule,
     HttpModule,
     InMemoryWebApiModule.forRoot(InMemResumeService),
-    AppRoutingModule,
     BrowserAnimationsModule,
     CustomMaterialModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    AppRoutingModule
   ],
   providers: [ResumeService],
   bootstrap: [AppComponent]
