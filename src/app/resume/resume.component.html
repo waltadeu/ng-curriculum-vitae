@@ -52,7 +52,7 @@
               <ul>
                 <li *ngIf="education.institution"><strong>Instituição: </strong>{{education.institution}}</li>
                 <li *ngIf="education.area"><strong>Formação: </strong>{{education.area}}</li>
-                <li *ngIf="education.studyType"><strong>Área de estudo: </strong>{{education.studyType}}</li>
+                <li *ngIf="education.studyType"><strong>Tipo de formação: </strong>{{education.studyType}}</li>
                 <li *ngIf="education.startDate"><strong>Período: </strong>{{education.startDate}} {{education.endDate}}</li>
                 <li *ngIf="education.gpa"><strong>Média: </strong>{{education.gpa}}</li>
                 <li *ngIf="education.courses">
@@ -184,7 +184,7 @@
               <dt>{{work.name}}</dt>
               <dd>
                 <ul>
-                  <li><strong>Sobre a empresa:</strong> {{work.description}}</li>
+                  <li *ngIf="work.description"><strong>Sobre a empresa:</strong> {{work.description}}</li>
                   <li><strong>Cargo:</strong> {{work.position}}</li>
                   <li><strong>Período:</strong> De {{work.startDate}} até {{work.endDate?work.endDate:'atual'}}.</li>
                   <li *ngIf="work.url"><strong>URL:</strong> <span class="url">{{work.url}}</span>.</li>
@@ -227,13 +227,13 @@
     </div>
   </section>
 </main>
-<footer>
+<footer *ngIf="resume.interests">
   <dl>
-    <dt *ngIf="resume.interests">
+    <dt>
       <md-icon>favorite</md-icon>
       <span>Interesses</span>
     </dt>
-    <dd *ngIf="resume.interests">
+    <dd>
       <dl>
         <ng-template ngFor let-interest [ngForOf]="resume.interests">
           <dt>{{interest.name}}</dt>
