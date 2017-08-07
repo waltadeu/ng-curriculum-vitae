@@ -3,6 +3,7 @@ import { HttpModule } from '@angular/http';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { MomentModule } from 'angular2-moment';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,7 +13,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 
 import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemResumeService } from './in-mem-resume.service';
-import { ResumeService } from "./resume/resume.service";
+import { ResumeService } from './resume/resume.service';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { ResumeService } from "./resume/resume.service";
     BrowserAnimationsModule,
     CustomMaterialModule,
     FlexLayoutModule,
+    MomentModule,
     AppRoutingModule
   ],
   providers: [ResumeService],
