@@ -24,11 +24,13 @@
         </li>
         <li *ngIf="resume.basics.url">
           <md-icon>link</md-icon>
-          <span class="url">{{resume.basics.url}}</span>
+          <span class="url"><a [href]="resume.basics.url">{{resume.basics.url}}</a></span>
         </li>
         <li *ngFor="let profile of resume.basics.profiles">
           <md-icon [title]="profile.network">link</md-icon>
-          <span class="url">{{profile.network}}: {{profile.url ?profile.url:profile.username}}</span>
+          <span class="url">
+            {{profile.network}}: <a [href]="profile.url" *ngIf="profile.url">{{profile.url}}</a><span *ngIf="!profile.url">profile.username</span>
+          </span>
         </li>
       </ul>
     </div>
@@ -119,9 +121,9 @@
               <dt>{{project.name}}</dt>
               <dd>
                 <ul>
-                  <li><strong>Entidade:</strong> {{project.entity}}</li>
-                  <li><strong>Período:</strong> De {{project.startDate}} até {{project.endDate?project.endDate:'atual'}}.</li>
-                  <li *ngIf="project.url"><strong>URL:</strong> <span class="url">{{project.url}}</span></li>
+                  <li *ngIf="project.entity"><strong>Entidade:</strong> {{project.entity}}</li>
+                  <li><strong>Período:</strong> De {{project.startDate | amLocale:'pt-br' | amDateFormat:'MMM/YYYY'}} até {{project.endDate?(project.endDate | amLocale:'pt-br' | amDateFormat:'MMM/YYYY'):'atual'}}.</li>
+                  <li *ngIf="project.url"><strong>URL:</strong> <a [href]="project.url" class="url">{{project.url}}</a></li>
                   <li>
                     <strong>Descrição:</strong> {{project.description}}
                     <ul class="styled" *ngIf="project.highlights">
@@ -151,7 +153,7 @@
                 <ul>
                   <li><strong>Editora: </strong>{{publication.publisher}}</li>
                   <li><strong>Data: </strong>{{publication.releaseDate}}</li>
-                  <li><strong>URL: </strong><span class="url">{{publication.url}}</span></li>
+                  <li><strong>URL: </strong><a [href]="publication.url" class="url">{{publication.url}}</a></li>
                   <li><strong>Resumo: </strong>{{publication.summary}}</li>
                 </ul>
               </dd>
@@ -187,7 +189,7 @@
                   <li *ngIf="work.description"><strong>Sobre a empresa:</strong> {{work.description}}</li>
                   <li><strong>Cargo:</strong> {{work.position}}</li>
                   <li><strong>Período:</strong> De {{work.startDate | amLocale:'pt-br' | amDateFormat:'MMM/YYYY'}} até {{work.endDate?(work.endDate | amLocale:'pt-br' | amDateFormat:'MMM/YYYY'):'atual'}}.</li>
-                  <li *ngIf="work.url"><strong>URL:</strong> <span class="url">{{work.url}}</span></li>
+                  <li *ngIf="work.url"><strong>URL:</strong> <a [href]="work.url" class="url">{{work.url}}</a></li>
                   <li>
                     <strong>Resumo:</strong> {{work.summary}}
                     <ul class="styled" *ngIf="work.highlights">
@@ -211,7 +213,7 @@
                 <ul>
                   <li><strong>Cargo:</strong> {{volunteer.position}}</li>
                   <li><strong>Período:</strong> De {{volunteer.startDate}} até {{volunteer.endDate?volunteer.endDate:'atual'}}.</li>
-                  <li *ngIf="volunteer.url"><strong>URL:</strong> <span class="url">{{volunteer.url}}</span></li>
+                  <li *ngIf="volunteer.url"><strong>URL:</strong> <a [href]="volunteer.url" class="url">{{volunteer.url}}</a></li>
                   <li>
                     <strong>Resumo:</strong> {{volunteer.summary}}
                     <ul class="styled" *ngIf="volunteer.highlights">

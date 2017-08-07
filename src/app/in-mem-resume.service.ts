@@ -430,7 +430,24 @@ export class InMemResumeService implements InMemoryDbService {
         ],
         'interests': null,
         'references': null,
-        'projects': null,
+        'projects': [
+          {
+            'name': 'ng-curriculum-vitae',
+            'description': 'Aplicação em Angular 4 que gera um currículo apartir de um JSON (json baseado no https://jsonresume.org/). Essa aplicação foi criada pelos seguintes motivos:',
+            'highlights': [
+              'Ter um currículo que eu possa hospedar no GitHub Pages.',
+              'Ter total controle da aparencia do currículo.',
+              'Tem uma aplicação onde possa testar frameworks, libs e técnicas.'
+            ],
+            'keywords': null,
+            'startDate': '2017-07-20',
+            'endDate': null,
+            'url': 'https://github.com/alisterlf/ng-curriculum-vitae',
+            'roles': null,
+            'entity': null,
+            'type': 'Angular Application'
+          }
+        ],
         'meta': {
           'canonical': 'https://raw.githubusercontent.com/jsonresume/resume-schema/master/resume.json',
           'version': 'v1.0.0',
@@ -438,7 +455,7 @@ export class InMemResumeService implements InMemoryDbService {
         }
       }
     ];
-    const resume = resumes[0];
+    const resume = resumes[1];
     return { resume };
   }
 }
