@@ -369,7 +369,7 @@ export class InMemResumeService implements InMemoryDbService {
               'Foundation',
               'jQuery',
               'Knockout',
-              'Templating Engines (Mustache e Handlebars)'
+              'Hogan.js, Handlebars e Mustache)'
             ]
           },
           {
