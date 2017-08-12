@@ -432,7 +432,7 @@ export class InMemResumeService implements InMemoryDbService {
         'references': null,
         'projects': [
           {
-            'name': 'ng-curriculum-vitae',
+            'name': 'Angular Curriculum Vitae',
             'description': 'Aplicação em Angular 4 que gera um currículo apartir de um JSON (json baseado no https://jsonresume.org/). Essa aplicação foi criada pelos seguintes motivos:',
             'highlights': [
               'Ter um currículo que eu possa hospedar no GitHub Pages.',
