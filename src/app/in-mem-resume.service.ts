@@ -263,7 +263,7 @@ export class InMemResumeService implements InMemoryDbService {
             'url': 'https://www.ctis.com.br/',
             'startDate': '2014-12-01',
             'endDate': '2015-04-01',
-            'summary': 'Desenvolvimento de aplicativos para Android utilizando a plataforma Cordova (HTML, CSS e Javascript). Com utilização do framework Angular 1.x.',
+            'summary': 'Desenvolvimento de aplicativos para Android utilizando a plataforma Ionic (Cordova, HTML, CSS e Javascript). Com utilização do framework Angular 1.x.',
             'highlights': null
           },
           {
@@ -273,8 +273,11 @@ export class InMemResumeService implements InMemoryDbService {
             'url': 'http://www.tesla.com.br/',
             'startDate': '2014-05-01',
             'endDate': '2014-10-01',
-            'summary': 'Coordenação da equipe de front-end e desenvolvimentos dos projetos mais complexos da empresa, dentre eles o e-commerce da C&C.',
-            'highlights': null
+            'summary': 'Coordenação da equipe de front-end e desenvolvimentos dos projetos mais complexos da empresa.',
+            'highlights': [
+              'Troca de todo o front-end do e-commerce.',
+              'Desenvolvimento do site do Submarino Viagens'
+            ]
           },
           {
             'name': 'RDI - Restaurant Application Development International LLC',
@@ -284,7 +287,9 @@ export class InMemResumeService implements InMemoryDbService {
             'startDate': '2014-01-01',
             'endDate': '2014-05-01',
             'summary': 'Prestação de serviço exclusivo para a empresa McDonald\'s no desenvolvimento e suporte de POS (point-of - sale) e software relacionados.',
-            'highlights': null
+            'highlights': [
+              'Desenvolvimentos de modulos em Javascript para o sitema de POS do McDonald\'s'
+            ]
           },
           {
             'name': 'TaskRow e MarketUP',
@@ -293,8 +298,11 @@ export class InMemResumeService implements InMemoryDbService {
             'url': '',
             'startDate': '2013-06-01',
             'endDate': '2013-11-01',
-            'summary': 'TaskRow (http://goo.gl/AjAKQj): Criação da interface do sistema de gerenciamento de agências (Single Page Application e layout responsivo). MarketUP (http://goo.gl/3XpfBL): Desenvolvimento de módulos de sistema ERP (Single Page Application).',
-            'highlights': null
+            'summary': 'Trabalhei como freelancer para essas duas startups que compatilham um escritorio.',
+            'highlights': [
+              'TaskRow (http://goo.gl/AjAKQj). Criação da interface do sistema de gerenciamento de agências (Single Page Application e layout responsivo)',
+              'MarketUP (http://goo.gl/3XpfBL): Desenvolvimento de módulos de sistema ERP (Single Page Application).'
+            ]
           },
           {
             'name': 'Sapient AG2',
@@ -303,8 +311,11 @@ export class InMemResumeService implements InMemoryDbService {
             'url': 'http://www.sapientag2.com.br',
             'startDate': '2012-07-01',
             'endDate': '2013-06-01',
-            'summary': 'Coordenação da equipe de Interface, responsável pelo treinamento e controle de qualidade do código. Responsável pelo desenvolvimento dos projetos mais complexos da agência.',
-            'highlights': null
+            'summary': 'Coordenação da equipe de Interface. Responsável pelo desenvolvimento dos projetos mais complexos da agências em HTML, CSS e Javascript.',
+            'highlights': [
+              'Desenvolvi um SPA sem uso de frameworks para Apex Brasil',
+              'Desenvolvi hotsites e fanpages do Facebook com layout e efeitos complexos'
+            ]
           },
           {
             'name': 'Tesla',
@@ -313,8 +324,12 @@ export class InMemResumeService implements InMemoryDbService {
             'url': 'http://www.tesla.com.br/',
             'startDate': '2009-07-01',
             'endDate': '2012-07-01',
-            'summary': 'Líder técnico da equipe, responsável pelo treinamento e controle de qualidade do código. Desenvolvimento de novos projetos visando a integração das equipes front-end e back-end utilizando .NET para a diminuição de erros e retrabalhos.',
-            'highlights': null
+            'summary': 'Líder técnico da equipe, responsável pelo treinamento da equipe em javascript. Responsável pelo desenvolvimento dos projetos mais complexos da agências em HTML, CSS e Javascript.',
+            'highlights': [
+              'Fui responsável por trazer todo o desenvolvimento javascript para a equipe de front-end',
+              'Desenvolvi sites com layout e efeitos complexos',
+              'Desenvolvi sites onde SEO era extremamente importante por ex o e-commerce da C&C'
+            ]
           },
           {
             'name': 'Player Comunicação Digital',
@@ -323,8 +338,12 @@ export class InMemResumeService implements InMemoryDbService {
             'url': 'http://www.playercom.net/',
             'startDate': '2008-04-01',
             'endDate': '2009-07-01',
-            'summary': 'Responsável pelo desenvolvimento de e-mail marketing, hotsites, sites institucionais, e e-commerce (Natura e Leroy Merlin).',
-            'highlights': null
+            'summary': 'Desenvolvimento (HTML e CSS) de e-mail marketing, hotsites, sites institucionais, e e-commerce.',
+            'highlights': [
+              'E-commerce da Natura',
+              'Varios hotsites para a Natura',
+              'Catálogo online da Leroy Merlin'
+            ]
           }
         ],
         'volunteer': null,
@@ -365,6 +384,7 @@ export class InMemResumeService implements InMemoryDbService {
             'keywords': [
               'Angular (1.x e 2+)',
               'Bootstrap (2, 3 e 4)',
+              'Cordova, Ionic',
               'Angular Material, Material Design Lite',
               'Foundation',
               'jQuery',
