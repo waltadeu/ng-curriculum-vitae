@@ -55,7 +55,8 @@
                 <li *ngIf="education.institution"><strong>Instituição: </strong>{{education.institution}}</li>
                 <li *ngIf="education.area"><strong>Formação: </strong>{{education.area}}</li>
                 <li *ngIf="education.studyType"><strong>Tipo de formação: </strong>{{education.studyType}}</li>
-                <li *ngIf="education.startDate"><strong>Período: </strong>{{education.startDate | amDateFormat:'MMM/YYYY'}} até {{education.endDate?(education.endDate | amDateFormat:'MMM/YYYY'):'atual'}}</li>
+                <li *ngIf="education.startDate"><strong>Início: </strong>{{education.startDate | amDateFormat:'MMM/YYYY'}}</li>
+                <li *ngIf="education.endDate"><strong>Término: </strong>{{education.endDate | amDateFormat:'MMM/YYYY'}}</li>
                 <li *ngIf="education.gpa"><strong>Média: </strong>{{education.gpa}}</li>
                 <li *ngIf="education.courses">
                   <strong>Cursos: </strong>
@@ -69,7 +70,7 @@
         </dd>
         <dt *ngIf="resume.awards">
           <md-icon>star</md-icon>
-          <span>Certiﬁcação</span>
+          <span>Certificação</span>
         </dt>
         <dd *ngIf="resume.awards">
           <ul>
@@ -118,11 +119,15 @@
         <dd *ngIf="resume.projects">
           <dl class="work-list">
             <ng-template ngFor let-project [ngForOf]="resume.projects">
-              <dt>{{project.name}}</dt>
+              <dt>
+                {{project.name}}
+                <em>
+                    {{project.startDate | amLocale:'pt-br' | amDateFormat:'MMM/YYYY'}} - {{project.endDate?(project.endDate | amLocale:'pt-br' | amDateFormat:'MMM/YYYY'):'atual'}}
+                </em>
+              </dt>
               <dd>
                 <ul>
                   <li *ngIf="project.entity"><strong>Entidade:</strong> {{project.entity}}</li>
-                  <li><strong>Período:</strong> De {{project.startDate | amLocale:'pt-br' | amDateFormat:'MMM/YYYY'}} até {{project.endDate?(project.endDate | amLocale:'pt-br' | amDateFormat:'MMM/YYYY'):'atual'}}.</li>
                   <li *ngIf="project.url"><strong>URL:</strong> <a [href]="project.url" class="url">{{project.url}}</a></li>
                   <li>
                     <strong>Descrição:</strong> {{project.description}}
@@ -178,17 +183,21 @@
       <dl class="category-list">
         <dt *ngIf="resume.work">
           <md-icon>history</md-icon>
-          <span>Experiência Proﬁssional</span>
+          <span>Experiência profissional</span>
         </dt>
         <dd *ngIf="resume.work">
           <dl class="work-list">
             <ng-template ngFor let-work [ngForOf]="resume.work">
-              <dt>{{work.name}}</dt>
+              <dt>
+                {{work.name}}
+                <em>
+                  {{work.startDate | amLocale:'pt-br' | amDateFormat:'MMM/YYYY'}} - {{work.endDate?(work.endDate | amLocale:'pt-br' | amDateFormat:'MMM/YYYY'):'atual'}}
+                </em>
+              </dt>
               <dd>
                 <ul>
                   <li *ngIf="work.description"><strong>Sobre a empresa:</strong> {{work.description}}</li>
                   <li><strong>Cargo:</strong> {{work.position}}</li>
-                  <li><strong>Período:</strong> De {{work.startDate | amLocale:'pt-br' | amDateFormat:'MMM/YYYY'}} até {{work.endDate?(work.endDate | amLocale:'pt-br' | amDateFormat:'MMM/YYYY'):'atual'}}.</li>
                   <li *ngIf="work.url"><strong>URL:</strong> <a [href]="work.url" class="url">{{work.url}}</a></li>
                   <li>
                     <strong>Resumo:</strong> {{work.summary}}
@@ -212,7 +221,7 @@
               <dd>
                 <ul>
                   <li><strong>Cargo:</strong> {{volunteer.position}}</li>
-                  <li><strong>Período:</strong> De {{volunteer.startDate}} até {{volunteer.endDate?volunteer.endDate:'atual'}}.</li>
+                  <li><strong>Período:</strong> {{volunteer.startDate}} - {{volunteer.endDate?volunteer.endDate:'atual'}}</li>
                   <li *ngIf="volunteer.url"><strong>URL:</strong> <a [href]="volunteer.url" class="url">{{volunteer.url}}</a></li>
                   <li>
                     <strong>Resumo:</strong> {{volunteer.summary}}

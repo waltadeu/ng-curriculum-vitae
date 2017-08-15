@@ -42,7 +42,7 @@ export class InMemResumeService implements InMemoryDbService {
             'url': 'http://piedpiper.example.com',
             'startDate': '2013-12-01',
             'endDate': '2014-12-01',
-            'summary': 'Pied Piper is a multi-platform technology based on a proprietary universal compression algorithm that has consistently fielded high Weisman Scores™ that are not merely competitive, but approach the theoretical limit of lossless compression.',
+            'summary': 'Pied Piper is a multi-platform technology based on a proprietary universal compression algorithm that has consistently fielded high Weisman Scores™ that are not merely competitive, but approach the theoretical limit of lossless compression',
             'highlights': [
               'Build an algorithm for artist to detect if their music was violating copy right infringement laws',
               'Successfully won Techcrunch Disrupt',
@@ -56,7 +56,7 @@ export class InMemResumeService implements InMemoryDbService {
             'url': 'http://piedpiper.example.com',
             'startDate': '2013-12-01',
             'endDate': '2014-12-01',
-            'summary': 'Pied Piper is a multi-platform technology based on a proprietary universal compression algorithm that has consistently fielded high Weisman Scores™ that are not merely competitive, but approach the theoretical limit of lossless compression.',
+            'summary': 'Pied Piper is a multi-platform technology based on a proprietary universal compression algorithm that has consistently fielded high Weisman Scores™ that are not merely competitive, but approach the theoretical limit of lossless compression',
             'highlights': [
               'Build an algorithm for artist to detect if their music was violating copy right infringement laws',
               'Successfully won Techcrunch Disrupt',
@@ -70,7 +70,7 @@ export class InMemResumeService implements InMemoryDbService {
             'url': 'http://piedpiper.example.com',
             'startDate': '2013-12-01',
             'endDate': '2014-12-01',
-            'summary': 'Pied Piper is a multi-platform technology based on a proprietary universal compression algorithm that has consistently fielded high Weisman Scores™ that are not merely competitive, but approach the theoretical limit of lossless compression.',
+            'summary': 'Pied Piper is a multi-platform technology based on a proprietary universal compression algorithm that has consistently fielded high Weisman Scores™ that are not merely competitive, but approach the theoretical limit of lossless compression',
             'highlights': [
               'Build an algorithm for artist to detect if their music was violating copy right infringement laws',
               'Successfully won Techcrunch Disrupt',
@@ -84,7 +84,7 @@ export class InMemResumeService implements InMemoryDbService {
             'url': 'http://piedpiper.example.com',
             'startDate': '2013-12-01',
             'endDate': '2014-12-01',
-            'summary': 'Pied Piper is a multi-platform technology based on a proprietary universal compression algorithm that has consistently fielded high Weisman Scores™ that are not merely competitive, but approach the theoretical limit of lossless compression.',
+            'summary': 'Pied Piper is a multi-platform technology based on a proprietary universal compression algorithm that has consistently fielded high Weisman Scores™ that are not merely competitive, but approach the theoretical limit of lossless compression',
             'highlights': [
               'Build an algorithm for artist to detect if their music was violating copy right infringement laws',
               'Successfully won Techcrunch Disrupt',
@@ -99,7 +99,7 @@ export class InMemResumeService implements InMemoryDbService {
             'url': 'http://coderdojo.example.com/',
             'startDate': '2012-01-01',
             'endDate': '2013-01-01',
-            'summary': 'Global movement of free coding clubs for young people.',
+            'summary': 'Global movement of free coding clubs for young people',
             'highlights': [
               'Awarded "Teacher of the Month"'
             ]
@@ -124,7 +124,7 @@ export class InMemResumeService implements InMemoryDbService {
             'title': 'Digital Compression Pioneer Award',
             'date': '2014-11-01',
             'awarder': 'Techcrunch',
-            'summary': 'There is no spoon.'
+            'summary': 'There is no spoon'
           }
         ],
         'publications': [
@@ -133,7 +133,7 @@ export class InMemResumeService implements InMemoryDbService {
             'publisher': 'Hooli',
             'releaseDate': '2014-10-01',
             'url': 'http://en.wikipedia.org/wiki/Silicon_Valley_(TV_series)',
-            'summary': 'Innovative middle-out compression algorithm that changes the way we store data.'
+            'summary': 'Innovative middle-out compression algorithm that changes the way we store data'
           }
         ],
         'skills': [
@@ -143,7 +143,7 @@ export class InMemResumeService implements InMemoryDbService {
             'keywords': [
               'HTML',
               'CSS',
-              'Javascript'
+              'JavaScript'
             ]
           },
           {
@@ -174,7 +174,7 @@ export class InMemResumeService implements InMemoryDbService {
         'references': [
           {
             'name': 'Erlich Bachman',
-            'reference': 'It is my pleasure to recommend Richard, his performance working as a consultant for Main St. Company proved that he will be a valuable addition to any company.'
+            'reference': 'It is my pleasure to recommend Richard, his performance working as a consultant for Main St. Company proved that he will be a valuable addition to any company'
           }
         ],
         'projects': [
@@ -184,10 +184,10 @@ export class InMemResumeService implements InMemoryDbService {
             'highlights': [
               'Won award at AIHacks 2016',
               'Built by all women team of newbie programmers',
-              'Using modern technologies such as GoogleMaps, Chrome Extension and Javascript'
+              'Using modern technologies such as GoogleMaps, Chrome Extension and JavaScript'
             ],
             'keywords': [
-              'GoogleMaps', 'Chrome Extension', 'Javascript'
+              'GoogleMaps', 'Chrome Extension', 'JavaScript'
             ],
             'startDate': '2016-08-24',
             'endDate': '2016-08-24',
@@ -213,7 +213,7 @@ export class InMemResumeService implements InMemoryDbService {
           'email': 'alisterlf@gmail.com',
           'phone': '(11) 97983-7935',
           'url': 'https://alisterlf.github.io',
-          'summary': 'Em 2001 fiz um curso de HTML e CSS, esse foi o início do meu interesse pela área. Em 2004 foi ao ar meu primeiro site, que foi o site institucional da escola em que eu estudava e era coordenador da sala de informática. Em 2006 fiz dois sites, um institucional e outro da radioweb da empresa onde trabalhava como suporte infraestrutura. Em 2008 iniciei minha carreira como front-end e trabalho especificamente com Javascript desde 2009. Nesse tempo trabalhei com as principais tecnologias do mercado. Tenho experiência com desenvolvimento e cordenação de equipes. Estudo, pesquiso e tenho muito interesse por novas tecnologias e procuro sempre utilizar as versões mais recentes. Desenvolvo usando o Angular desde 2014.'
+          'summary': 'Em 2001 fiz um curso de HTML e CSS, esse foi o início do meu interesse pela área. Em 2004 foi ao ar meu primeiro site, que foi o site institucional da escola em que eu estudava e era coordenador da sala de informática. Em 2006 fiz dois sites, um institucional e outro da radioweb da empresa onde trabalhava como suporte infraestrutura. Em 2008 iniciei minha carreira como Front-end e trabalho especificamente com JavaScript desde 2009. Nesse tempo trabalhei com as principais tecnologias do mercado. Tenho experiência com desenvolvimento e coordenação de equipes. Estudo, pesquiso e tenho muito interesse por novas tecnologias e procuro sempre utilizar as versões mais recentes. Desenvolvo usando o Angular desde 2014.'
           ,
           'location': {
             'address': '',
@@ -243,7 +243,7 @@ export class InMemResumeService implements InMemoryDbService {
             'url': 'http://www.infracommerce.com.br/',
             'startDate': '2017-07-01',
             'endDate': '',
-            'summary': 'Desenvolvimento e manutenção de uma plataforma B2C e B2B.',
+            'summary': 'Desenvolvimento e manutenção de uma plataforma B2C e B2B',
             'highlights': null
           },
           {
@@ -253,8 +253,12 @@ export class InMemResumeService implements InMemoryDbService {
             'url': 'https://www.me.com.br/',
             'startDate': '2015-06-01',
             'endDate': '2017-04-01',
-            'summary': 'Desenvolvimento de uma plataforma B2B usando Angular 2 e Angular Material 2.',
-            'highlights': null
+            'summary': 'Desenvolvimento de uma plataforma B2B usando Angular 2 e Angular Material 2',
+            'highlights': [
+              'Participação em um grupo de UX que realizava testes A/B de acordo com as ideias discutidas durante as reuniões semanais',
+              'Desenvolvimento da plataforma usando Angular 1.x e Material Design Lite',
+              'Migração da plataforma para Angular 2 e Angular Material 2'
+            ]
           },
           {
             'name': 'CTIS',
@@ -263,8 +267,11 @@ export class InMemResumeService implements InMemoryDbService {
             'url': 'https://www.ctis.com.br/',
             'startDate': '2014-12-01',
             'endDate': '2015-04-01',
-            'summary': 'Desenvolvimento de aplicativos para Android utilizando a plataforma Ionic (Cordova, HTML, CSS e Javascript). Com utilização do framework Angular 1.x.',
-            'highlights': null
+            'summary': 'Desenvolvimento de aplicativos para Android utilizando a plataforma Ionic (Cordova, HTML, CSS e JavaScript) com utilização do framework Angular 1.x',
+            'highlights': [
+              'Desenvolvimento de um plugin em Java para conectar o aplicativo com uma impressora Bluetooth',
+              'Desenvolvimento de um algoritmo para conversão de fotos coloridas em uma imagem P&B pontilhada para a impressão em impressora termica'
+            ]
           },
           {
             'name': 'Tesla',
@@ -273,22 +280,22 @@ export class InMemResumeService implements InMemoryDbService {
             'url': 'http://www.tesla.com.br/',
             'startDate': '2014-05-01',
             'endDate': '2014-10-01',
-            'summary': 'Coordenação da equipe de front-end e desenvolvimentos dos projetos mais complexos da empresa.',
+            'summary': 'Coordenação da equipe de Front-end e desenvolvimento dos projetos mais complexos da empresa',
             'highlights': [
-              'Troca de todo o front-end do e-commerce.',
+              'Desenvolvimento de um Front-end completamente novo para o e-commerce da C&C',
               'Desenvolvimento do site do Submarino Viagens'
             ]
           },
           {
             'name': 'RDI - Restaurant Application Development International LLC',
             'description': '',
-            'position': 'Desenvolvedor Javascript',
+            'position': 'Desenvolvedor JavaScript',
             'url': 'https://www.rdisoftware.com/',
             'startDate': '2014-01-01',
             'endDate': '2014-05-01',
-            'summary': 'Prestação de serviço exclusivo para a empresa McDonald\'s no desenvolvimento e suporte de POS (point-of - sale) e software relacionados.',
+            'summary': 'Prestação de serviço exclusivo para a empresa McDonald\'s no desenvolvimento e suporte de POS (point of sale) e software relacionados',
             'highlights': [
-              'Desenvolvimentos de modulos em Javascript para o sitema de POS do McDonald\'s'
+              'Desenvolvimento de modulos em JavaScript para o sistema de POS do McDonald\'s'
             ]
           },
           {
@@ -298,10 +305,10 @@ export class InMemResumeService implements InMemoryDbService {
             'url': '',
             'startDate': '2013-06-01',
             'endDate': '2013-11-01',
-            'summary': 'Trabalhei como freelancer para essas duas startups que compatilham um escritorio.',
+            'summary': 'Freelancer para essas duas startups que compartilham um escritório',
             'highlights': [
-              'TaskRow (http://goo.gl/AjAKQj). Criação da interface do sistema de gerenciamento de agências (Single Page Application e layout responsivo)',
-              'MarketUP (http://goo.gl/3XpfBL): Desenvolvimento de módulos de sistema ERP (Single Page Application).'
+              'TaskRow (http://goo.gl/AjAKQj): Criação da interface do sistema de gerenciamento de agências (Single Page Application e layout responsivo)',
+              'MarketUP (http://goo.gl/3XpfBL): Desenvolvimento de módulos de sistema ERP (Single Page Application)'
             ]
           },
           {
@@ -311,10 +318,10 @@ export class InMemResumeService implements InMemoryDbService {
             'url': 'http://www.sapientag2.com.br',
             'startDate': '2012-07-01',
             'endDate': '2013-06-01',
-            'summary': 'Coordenação da equipe de Interface. Responsável pelo desenvolvimento dos projetos mais complexos da agências em HTML, CSS e Javascript.',
+            'summary': 'Coordenação da equipe de Interface. Responsável pelo desenvolvimento dos projetos mais complexos da agência em HTML, CSS e JavaScript',
             'highlights': [
-              'Desenvolvi um SPA sem uso de frameworks para Apex Brasil',
-              'Desenvolvi hotsites e fanpages do Facebook com layout e efeitos complexos'
+              'Desenvolvimento de uma SPA sem uso de frameworks para Apex Brasil',
+              'Desenvolvimento de hotsites e fanpages do Facebook com layout e efeitos complexos'
             ]
           },
           {
@@ -324,11 +331,11 @@ export class InMemResumeService implements InMemoryDbService {
             'url': 'http://www.tesla.com.br/',
             'startDate': '2009-07-01',
             'endDate': '2012-07-01',
-            'summary': 'Líder técnico da equipe, responsável pelo treinamento da equipe em javascript. Responsável pelo desenvolvimento dos projetos mais complexos da agências em HTML, CSS e Javascript.',
+            'summary': 'Líder técnico e responsável pelo treinamento da equipe em JavaScript. Responsável pelo desenvolvimento dos projetos mais complexos da agência em HTML, CSS e JavaScript',
             'highlights': [
-              'Fui responsável por trazer todo o desenvolvimento javascript para a equipe de front-end',
-              'Desenvolvi sites com layout e efeitos complexos',
-              'Desenvolvi sites onde SEO era extremamente importante por ex o e-commerce da C&C'
+              'Responsável por trazer todo o desenvolvimento JavaScript para a equipe de Front-end',
+              'Desenvolvimento de sites com layout e efeitos complexos',
+              'Desenvolvimento de sites onde SEO era extremamente importante. Por ex o e-commerce da C&C'
             ]
           },
           {
@@ -338,10 +345,10 @@ export class InMemResumeService implements InMemoryDbService {
             'url': 'http://www.playercom.net/',
             'startDate': '2008-04-01',
             'endDate': '2009-07-01',
-            'summary': 'Desenvolvimento (HTML e CSS) de e-mail marketing, hotsites, sites institucionais, e e-commerce.',
+            'summary': 'Desenvolvimento (HTML e CSS) de e-mail marketing, hotsites, sites institucionais e e-commerce',
             'highlights': [
               'E-commerce da Natura',
-              'Varios hotsites para a Natura',
+              'Vários hotsites para a Natura',
               'Catálogo online da Leroy Merlin'
             ]
           }
@@ -374,7 +381,7 @@ export class InMemResumeService implements InMemoryDbService {
             'keywords': [
               'HTML5',
               'CSS3',
-              'Javascript (ES6)',
+              'JavaScript (ES6)',
               'Node.js'
             ]
           },
@@ -453,11 +460,11 @@ export class InMemResumeService implements InMemoryDbService {
         'projects': [
           {
             'name': 'Angular Curriculum Vitae',
-            'description': 'Aplicação em Angular 4 que gera um currículo apartir de um JSON (json baseado no https://jsonresume.org/). Essa aplicação foi criada pelos seguintes motivos:',
+            'description': 'Aplicação em Angular 4 que gera um currículo a partir de um JSON baseado no https://jsonresume.org/. Essa aplicação foi criada pelos seguintes motivos:',
             'highlights': [
-              'Ter um currículo que eu possa hospedar no GitHub Pages.',
-              'Ter total controle da aparencia do currículo.',
-              'Tem uma aplicação onde possa testar frameworks, libs e técnicas.'
+              'Ter um currículo em um formato compatível com o GitHub Pages',
+              'Total controle da aparência do currículo',
+              'Poder testar livremente frameworks, libs e técnicas em uma aplicação'
             ],
             'keywords': null,
             'startDate': '2017-07-20',
