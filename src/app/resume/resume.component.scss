@@ -106,8 +106,18 @@ dl {
       font-size: 16px;
     }
     dd {
-      padding-left: 10px;
       padding-bottom: 10px;
+      li {
+        padding-left: 10px;
+        &.header {
+          padding-left: 0;
+          hr {
+            margin-top: 0.25rem;
+            border: none;
+            border-top: 1px solid #999;
+          }
+        }
+      }
     }
   }
 }
@@ -125,4 +135,7 @@ strong {
 ul.styled {
   list-style: initial;
   padding-left: 20px;
+  li {
+    padding-left: 0;
+  }
 }
