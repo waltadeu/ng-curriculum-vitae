@@ -482,7 +482,7 @@ export class InMemResumeService implements InMemoryDbService {
         }
       }
     ];
-    const resume = resumes[0];
+    const resume = resumes[1];
     return { resume };
   }
 }
