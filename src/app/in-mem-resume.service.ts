@@ -480,9 +480,285 @@ export class InMemResumeService implements InMemoryDbService {
           'version': 'v1.0.0',
           'lastModified': '2017-08-06T19:34:00'
         }
+      }, {
+        'basics': {
+          'name': 'Álister Lopes Ferreira',
+          'birthdate': '1987-02-21',
+          'label': 'Front-end Developer',
+          'image': 'https://lh6.googleusercontent.com/-0akyozFsi68/AAAAAAAAAAI/AAAAAAABf84/QY_UrTzuwCg/photo.jpg',
+          'email': 'alisterlf@gmail.com',
+          'phone': '(11) 97983-7935',
+          'url': 'https://alisterlf.github.io',
+          'summary': 'Em 2001 fiz um curso de HTML e CSS, esse foi o início do meu interesse pela área. Em 2004 foi ao ar meu primeiro site, que foi o site institucional da escola em que eu estudava e era coordenador da sala de informática. Em 2006 fiz dois sites, um institucional e outro da radioweb da empresa onde trabalhava como suporte infraestrutura. Em 2008 iniciei minha carreira como Front-end e trabalho especificamente com JavaScript desde 2009. Nesse tempo trabalhei com as principais tecnologias do mercado. Tenho experiência com desenvolvimento e coordenação de equipes. Estudo, pesquiso e tenho muito interesse por novas tecnologias e procuro sempre utilizar as versões mais recentes. Desenvolvo usando o Angular desde 2014.'
+          ,
+          'location': {
+            'address': '',
+            'postalCode': '',
+            'city': 'São Paulo',
+            'countryCode': 'BR',
+            'region': 'SP'
+          },
+          'profiles': [
+            {
+              'network': 'LinkedIn',
+              'username': 'alisterlf',
+              'url': 'https://www.linkedin.com/in/alisterlf'
+            },
+            {
+              'network': 'GitHub',
+              'username': 'alisterlf',
+              'url': 'https://github.com/alisterlf/'
+            }
+          ]
+        },
+        'work': [
+          {
+            'name': 'Infracommerce',
+            'description': '',
+            'position': 'Front-end Developer',
+            'url': 'http://www.infracommerce.com.br/',
+            'startDate': '2017-07-01',
+            'endDate': '',
+            'summary': 'Desenvolvimento e manutenção de uma plataforma B2C e B2B',
+            'highlights': null
+          },
+          {
+            'name': 'Mercado Eletrônico',
+            'description': '',
+            'position': 'Front-end Developer',
+            'url': 'https://www.me.com.br/',
+            'startDate': '2015-06-01',
+            'endDate': '2017-04-01',
+            'summary': 'Desenvolvimento de uma plataforma B2B usando Angular 2 e Angular Material 2',
+            'highlights': [
+              'Participação em um grupo de UX que realizava testes A/B de acordo com as ideias discutidas durante as reuniões semanais',
+              'Desenvolvimento da plataforma usando Angular 1.x e Material Design Lite',
+              'Migração da plataforma para Angular 2 e Angular Material 2'
+            ]
+          },
+          {
+            'name': 'CTIS',
+            'description': '',
+            'position': 'Front-end Developer',
+            'url': 'https://www.ctis.com.br/',
+            'startDate': '2014-12-01',
+            'endDate': '2015-04-01',
+            'summary': 'Desenvolvimento de aplicativos para Android utilizando a plataforma Ionic (Cordova, HTML, CSS e JavaScript) com utilização do framework Angular 1.x',
+            'highlights': [
+              'Desenvolvimento de um plugin em Java para conectar o aplicativo com uma impressora Bluetooth',
+              'Desenvolvimento de um algoritmo para conversão de fotos coloridas em uma imagem P&B pontilhada para a impressão em impressora termica'
+            ]
+          },
+          {
+            'name': 'Tesla',
+            'description': '',
+            'position': 'Front-end Developer',
+            'url': 'http://www.tesla.com.br/',
+            'startDate': '2014-05-01',
+            'endDate': '2014-10-01',
+            'summary': 'Coordenação da equipe de Front-end e desenvolvimento dos projetos mais complexos da empresa',
+            'highlights': [
+              'Desenvolvimento de um Front-end completamente novo para o e-commerce da C&C',
+              'Desenvolvimento do site do Submarino Viagens'
+            ]
+          },
+          {
+            'name': 'RDI - Restaurant Application Development International LLC',
+            'description': '',
+            'position': 'JavaScript Developer',
+            'url': 'https://www.rdisoftware.com/',
+            'startDate': '2014-01-01',
+            'endDate': '2014-05-01',
+            'summary': 'Prestação de serviço exclusivo para a empresa McDonald\'s no desenvolvimento e suporte de POS (point of sale) e software relacionados',
+            'highlights': [
+              'Desenvolvimento de modulos em JavaScript para o sistema de POS do McDonald\'s'
+            ]
+          },
+          {
+            'name': 'TaskRow e MarketUP',
+            'description': '',
+            'position': 'Front-end Developer',
+            'url': '',
+            'startDate': '2013-06-01',
+            'endDate': '2013-11-01',
+            'summary': 'Freelancer para essas duas startups que compartilham um escritório',
+            'highlights': [
+              'TaskRow (http://goo.gl/AjAKQj): Criação da interface do sistema de gerenciamento de agências (Single Page Application e layout responsivo)',
+              'MarketUP (http://goo.gl/3XpfBL): Desenvolvimento de módulos de sistema ERP (Single Page Application)'
+            ]
+          },
+          {
+            'name': 'Sapient AG2',
+            'description': '',
+            'position': 'Front-end Coordinator',
+            'url': 'http://www.sapientag2.com.br',
+            'startDate': '2012-07-01',
+            'endDate': '2013-06-01',
+            'summary': 'Coordenação da equipe de Interface. Responsável pelo desenvolvimento dos projetos mais complexos da agência em HTML, CSS e JavaScript',
+            'highlights': [
+              'Desenvolvimento de uma SPA sem uso de frameworks para Apex Brasil',
+              'Desenvolvimento de hotsites e fanpages do Facebook com layout e efeitos complexos'
+            ]
+          },
+          {
+            'name': 'Tesla',
+            'description': '',
+            'position': 'Front-end Developer',
+            'url': 'http://www.tesla.com.br/',
+            'startDate': '2009-07-01',
+            'endDate': '2012-07-01',
+            'summary': 'Líder técnico e responsável pelo treinamento da equipe em JavaScript. Responsável pelo desenvolvimento dos projetos mais complexos da agência em HTML, CSS e JavaScript',
+            'highlights': [
+              'Responsável por trazer todo o desenvolvimento JavaScript para a equipe de Front-end',
+              'Desenvolvimento de sites com layout e efeitos complexos',
+              'Desenvolvimento de sites onde SEO era extremamente importante. Por ex o e-commerce da C&C'
+            ]
+          },
+          {
+            'name': 'Player Comunicação Digital',
+            'description': '',
+            'position': 'Front-end Developer',
+            'url': 'http://www.playercom.net/',
+            'startDate': '2008-04-01',
+            'endDate': '2009-07-01',
+            'summary': 'Desenvolvimento (HTML e CSS) de e-mail marketing, hotsites, sites institucionais e e-commerce',
+            'highlights': [
+              'E-commerce da Natura',
+              'Vários hotsites para a Natura',
+              'Catálogo online da Leroy Merlin'
+            ]
+          }
+        ],
+        'volunteer': null,
+        'education': [
+          {
+            'institution': 'Universidade Nove de Julho',
+            'area': 'Computer science',
+            'studyType': 'Bachelor degree',
+            'startDate': '2007-07-01',
+            'endDate': '',
+            'gpa': '',
+            'courses': null
+          }
+        ],
+        'awards': [
+          {
+            'title': 'Microsoft Specialist: Programming in HTML5 with JavaScript and CSS3',
+            'date': '2013-01-31',
+            'awarder': 'Microsoft',
+            'summary': ''
+          }
+        ],
+        'publications': null,
+        'skills': [
+          {
+            'name': 'Languages',
+            'level': '',
+            'keywords': [
+              'HTML5',
+              'CSS3',
+              'JavaScript (ES6)',
+              'Node.js'
+            ]
+          },
+          {
+            'name': 'Frameworks and libs',
+            'level': '',
+            'keywords': [
+              'Angular (1.x e 2+)',
+              'Bootstrap (2, 3 e 4)',
+              'Cordova, Ionic',
+              'Angular Material, Material Design Lite',
+              'Foundation',
+              'jQuery',
+              'Knockout',
+              'Hogan.js, Handlebars e Mustache'
+            ]
+          },
+          {
+            'name': 'Work with',
+            'level': '',
+            'keywords': [
+              'TypeScript',
+              'SASS, LESS',
+              'REST API',
+              'GIT, TFS, SVN',
+              'Webpack, Grunt, Gulp',
+              'NPM, Bower',
+              'ESLint, TSLint',
+              'RxJS',
+              'Angular CLI',
+              'C#.NET (Web Forms e MVC)',
+              'Adobe Photoshop',
+              'Visual Studio',
+              'Visual Studio Code'
+            ]
+          },
+          {
+            'name': 'Techniques',
+            'level': '',
+            'keywords': [
+              'Single Page Applications',
+              'Responsive & Fluid Layout (FlexBox)',
+              'Cross-browser Compatibility',
+              'Web Standards',
+              'Acessibilidade',
+              'SEO',
+              'WAI-ARIA',
+              'Microformats'
+            ]
+          },
+          {
+            'name': 'I am learning',
+            'level': '',
+            'keywords': [
+              'React',
+              'Webpack',
+              'CSS Grid layout',
+              'Jasmine',
+              'Karma',
+              'Protractor'
+            ]
+          }
+        ],
+        'languages': [
+          {
+            'language': 'Português',
+            'fluency': 'Native speaker'
+          },
+          {
+            'language': 'Inglês',
+            'fluency': 'Advanced'
+          }
+        ],
+        'interests': null,
+        'references': null,
+        'projects': [
+          {
+            'name': 'Angular Curriculum Vitae',
+            'description': 'Aplicação em Angular 4 que gera um currículo a partir de um JSON baseado no https://jsonresume.org/. Essa aplicação foi criada pelos seguintes motivos:',
+            'highlights': [
+              'Ter um currículo em um formato compatível com o GitHub Pages',
+              'Total controle da aparência do currículo',
+              'Poder testar livremente frameworks, libs e técnicas em uma aplicação'
+            ],
+            'keywords': null,
+            'startDate': '2017-07-20',
+            'endDate': null,
+            'url': 'https://github.com/alisterlf/ng-curriculum-vitae',
+            'roles': null,
+            'entity': null,
+            'type': 'Angular Application'
+          }
+        ],
+        'meta': {
+          'canonical': 'https://raw.githubusercontent.com/jsonresume/resume-schema/master/resume.json',
+          'version': 'v1.0.0',
+          'lastModified': '2017-08-06T19:34:00'
+        }
       }
     ];
-    const resume = resumes[1];
+    const resume = resumes[0];
     return { resume };
   }
 }
