@@ -489,7 +489,7 @@ export class InMemResumeService implements InMemoryDbService {
           'email': 'alisterlf@gmail.com',
           'phone': '(11) 97983-7935',
           'url': 'https://alisterlf.github.io',
-          'summary': 'Em 2001 fiz um curso de HTML e CSS, esse foi o início do meu interesse pela área. Em 2004 foi ao ar meu primeiro site, que foi o site institucional da escola em que eu estudava e era coordenador da sala de informática. Em 2006 fiz dois sites, um institucional e outro da radioweb da empresa onde trabalhava como suporte infraestrutura. Em 2008 iniciei minha carreira como Front-end e trabalho especificamente com JavaScript desde 2009. Nesse tempo trabalhei com as principais tecnologias do mercado. Tenho experiência com desenvolvimento e coordenação de equipes. Estudo, pesquiso e tenho muito interesse por novas tecnologias e procuro sempre utilizar as versões mais recentes. Desenvolvo usando o Angular desde 2014.'
+          'summary': 'In 2001 I did a course in HTML and CSS, this was the beginning of my interest for, what later on, would became my carrer. In 2004, as the coordinator of the computer room of the school my first institucional website was on. In 2006 I continued to develop websites, one institutional and other for the radioweb of the company I was working as infrastructure support. In 2008 my carrer as Front-end began and I work specifically with Javascript since 2009. In all those years I worked with the main technologies of the market. I have experience with web development and team coordination. I keep studing, searching and updating myself with all new technologies. I develop using Angular since 2014.'
           ,
           'location': {
             'address': '',
@@ -519,7 +519,7 @@ export class InMemResumeService implements InMemoryDbService {
             'url': 'http://www.infracommerce.com.br/',
             'startDate': '2017-07-01',
             'endDate': '',
-            'summary': 'Desenvolvimento e manutenção de uma plataforma B2C e B2B',
+            'summary': 'Development and maintenance of a B2C and B2B platform',
             'highlights': null
           },
           {
@@ -529,11 +529,11 @@ export class InMemResumeService implements InMemoryDbService {
             'url': 'https://www.me.com.br/',
             'startDate': '2015-06-01',
             'endDate': '2017-04-01',
-            'summary': 'Desenvolvimento de uma plataforma B2B usando Angular 2 e Angular Material 2',
+            'summary': 'Development of a B2B platform using Angular 2 and Angular Material 2',
             'highlights': [
-              'Participação em um grupo de UX que realizava testes A/B de acordo com as ideias discutidas durante as reuniões semanais',
-              'Desenvolvimento da plataforma usando Angular 1.x e Material Design Lite',
-              'Migração da plataforma para Angular 2 e Angular Material 2'
+              'Participation in a UX group that performed A/B tests according to the ideas discussed during the weekly meetings',
+              'Development of a platform using Angular 1.x and Material Design Lite',
+              'Migration of the platform to Angular 2 and Material Angular 2'
             ]
           },
           {
@@ -543,10 +543,10 @@ export class InMemResumeService implements InMemoryDbService {
             'url': 'https://www.ctis.com.br/',
             'startDate': '2014-12-01',
             'endDate': '2015-04-01',
-            'summary': 'Desenvolvimento de aplicativos para Android utilizando a plataforma Ionic (Cordova, HTML, CSS e JavaScript) com utilização do framework Angular 1.x',
+            'summary': 'Development of Android applications using the Ionic framework (Cordova, HTML, CSS and JavaScript) with Angular framework 1.x',
             'highlights': [
-              'Desenvolvimento de um plugin em Java para conectar o aplicativo com uma impressora Bluetooth',
-              'Desenvolvimento de um algoritmo para conversão de fotos coloridas em uma imagem P&B pontilhada para a impressão em impressora termica'
+              'Development of a Java plugin to connect the application to a Bluetooth printer',
+              'Development of an algorithm for converting color photos into a dotted B&W image for thermal printer printing'
             ]
           },
           {
@@ -556,10 +556,10 @@ export class InMemResumeService implements InMemoryDbService {
             'url': 'http://www.tesla.com.br/',
             'startDate': '2014-05-01',
             'endDate': '2014-10-01',
-            'summary': 'Coordenação da equipe de Front-end e desenvolvimento dos projetos mais complexos da empresa',
+            'summary': 'Coordinator of the Front-end team and development of the company\'s most complex projects',
             'highlights': [
-              'Desenvolvimento de um Front-end completamente novo para o e-commerce da C&C',
-              'Desenvolvimento do site do Submarino Viagens'
+              'Development of a completely new Front-end for C&C e-commerce',
+              'Development of Submarino Viagens website'
             ]
           },
           {
@@ -569,9 +569,9 @@ export class InMemResumeService implements InMemoryDbService {
             'url': 'https://www.rdisoftware.com/',
             'startDate': '2014-01-01',
             'endDate': '2014-05-01',
-            'summary': 'Prestação de serviço exclusivo para a empresa McDonald\'s no desenvolvimento e suporte de POS (point of sale) e software relacionados',
+            'summary': 'Service focused on develop and support of POS (point of sale) and related softwares for Mc Donald\'s',
             'highlights': [
-              'Desenvolvimento de modulos em JavaScript para o sistema de POS do McDonald\'s'
+              'Developing JavaScript modules for the McDonald\'s POS system'
             ]
           },
           {
@@ -581,10 +581,10 @@ export class InMemResumeService implements InMemoryDbService {
             'url': '',
             'startDate': '2013-06-01',
             'endDate': '2013-11-01',
-            'summary': 'Freelancer para essas duas startups que compartilham um escritório',
+            'summary': 'Freelancer for these two startups who share an office',
             'highlights': [
-              'TaskRow (http://goo.gl/AjAKQj): Criação da interface do sistema de gerenciamento de agências (Single Page Application e layout responsivo)',
-              'MarketUP (http://goo.gl/3XpfBL): Desenvolvimento de módulos de sistema ERP (Single Page Application)'
+              'TaskRow (http://goo.gl/AjAKQj): Creating the agency management system interface (Single Page Application e layout responsivo)',
+              'MarketUP (http://goo.gl/3XpfBL): Development of POS system modules (Single Page Application)'
             ]
           },
           {
@@ -594,10 +594,10 @@ export class InMemResumeService implements InMemoryDbService {
             'url': 'http://www.sapientag2.com.br',
             'startDate': '2012-07-01',
             'endDate': '2013-06-01',
-            'summary': 'Coordenação da equipe de Interface. Responsável pelo desenvolvimento dos projetos mais complexos da agência em HTML, CSS e JavaScript',
+            'summary': 'Coordination of the Interface team. Responsible for developing the agency\'s most complex projects in HTML, CSS and JavaScript',
             'highlights': [
-              'Desenvolvimento de uma SPA sem uso de frameworks para Apex Brasil',
-              'Desenvolvimento de hotsites e fanpages do Facebook com layout e efeitos complexos'
+              'Development of a SPA without using frameworks to Apex Brasil',
+              'Development of hotsites and Facebook fanpages with layout and complex effects'
             ]
           },
           {
@@ -607,11 +607,11 @@ export class InMemResumeService implements InMemoryDbService {
             'url': 'http://www.tesla.com.br/',
             'startDate': '2009-07-01',
             'endDate': '2012-07-01',
-            'summary': 'Líder técnico e responsável pelo treinamento da equipe em JavaScript. Responsável pelo desenvolvimento dos projetos mais complexos da agência em HTML, CSS e JavaScript',
+            'summary': 'Technical leader responsible for training the team in JavaScript. Responsible for developing the agency\'s most complex projects in HTML, CSS and JavaScript',
             'highlights': [
-              'Responsável por trazer todo o desenvolvimento JavaScript para a equipe de Front-end',
-              'Desenvolvimento de sites com layout e efeitos complexos',
-              'Desenvolvimento de sites onde SEO era extremamente importante. Por ex o e-commerce da C&C'
+              'Responsible for bringing all Javascript development to the Front-end team',
+              'Development of sites with complex layout and effects',
+              'Development of websites where SEO was extremely important. For example, C&C e-commerce'
             ]
           },
           {
@@ -621,11 +621,11 @@ export class InMemResumeService implements InMemoryDbService {
             'url': 'http://www.playercom.net/',
             'startDate': '2008-04-01',
             'endDate': '2009-07-01',
-            'summary': 'Desenvolvimento (HTML e CSS) de e-mail marketing, hotsites, sites institucionais e e-commerce',
+            'summary': 'Development (HTML and CSS) of e-mail marketing, hotsites, institutional sites and e-commerce',
             'highlights': [
-              'E-commerce da Natura',
-              'Vários hotsites para a Natura',
-              'Catálogo online da Leroy Merlin'
+              'Natura\'s e-commerce ',
+              'Natura\'s several hotsites',
+              'Online catalogue of Leroy Merlin'
             ]
           }
         ],
@@ -665,14 +665,14 @@ export class InMemResumeService implements InMemoryDbService {
             'name': 'Frameworks and libs',
             'level': '',
             'keywords': [
-              'Angular (1.x e 2+)',
-              'Bootstrap (2, 3 e 4)',
+              'Angular (1.x and 2+)',
+              'Bootstrap (2, 3 and 4)',
               'Cordova, Ionic',
               'Angular Material, Material Design Lite',
               'Foundation',
               'jQuery',
               'Knockout',
-              'Hogan.js, Handlebars e Mustache'
+              'Hogan.js, Handlebars and Mustache'
             ]
           },
           {
@@ -688,7 +688,7 @@ export class InMemResumeService implements InMemoryDbService {
               'ESLint, TSLint',
               'RxJS',
               'Angular CLI',
-              'C#.NET (Web Forms e MVC)',
+              'C#.NET (Web Forms and MVC)',
               'Adobe Photoshop',
               'Visual Studio',
               'Visual Studio Code'
@@ -736,11 +736,11 @@ export class InMemResumeService implements InMemoryDbService {
         'projects': [
           {
             'name': 'Angular Curriculum Vitae',
-            'description': 'Aplicação em Angular 4 que gera um currículo a partir de um JSON baseado no https://jsonresume.org/. Essa aplicação foi criada pelos seguintes motivos:',
+            'description': 'Angular 4 aplication that generates a resume according to a JSON based on https://jsonresume.org/. This application was created for the following reasons:',
             'highlights': [
-              'Ter um currículo em um formato compatível com o GitHub Pages',
-              'Total controle da aparência do currículo',
-              'Poder testar livremente frameworks, libs e técnicas em uma aplicação'
+              'Have a resume in a format compatible with GitHub Pages',
+              'Full control of resume look',
+              'Being able to freely test frameworks, libs and techniques in an application'
             ],
             'keywords': null,
             'startDate': '2017-07-20',
@@ -758,7 +758,7 @@ export class InMemResumeService implements InMemoryDbService {
         }
       }
     ];
-    const resume = resumes[0];
+    const resume = resumes[1];
     return { resume };
   }
 }

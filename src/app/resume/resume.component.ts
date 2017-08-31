@@ -34,7 +34,7 @@ export class ResumeComponent implements OnInit {
         'courses': 'courses'
       },
       'awards': {
-        'header': 'Certificação',
+        'header': 'Certificações',
         'title': 'Título',
         'date': 'Data',
         'awarder': 'Instituição',
@@ -68,10 +68,10 @@ export class ResumeComponent implements OnInit {
         'courses': 'courses'
       },
       'awards': {
-        'header': 'Certification',
+        'header': 'Certifications',
         'title': 'Title',
         'date': 'Date',
-        'awarder': 'Awarder',
+        'awarder': 'Institution',
         'summary': 'Summary'
       },
       'skills': 'Skills',
@@ -83,9 +83,9 @@ export class ResumeComponent implements OnInit {
       },
       'publications': 'Publications',
       'references': 'References',
-      'work': 'Work',
+      'work': 'Work experience',
       'volunteer': 'Volunteer',
       'interests': 'Interests'
-    }][1];
+    }][0];
   }
 }
