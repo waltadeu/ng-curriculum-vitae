@@ -23,7 +23,7 @@ export class ResumeService {
 
   private extractData(response: Response) {
     const body = response.json();
-    return body.data || {};
+    return body || {};
   }
 
   private handleError(error: Response): Observable<any> {
